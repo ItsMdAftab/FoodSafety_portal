@@ -1,0 +1,114 @@
+/* Existing CSS... */
+/* Reset for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+  background-color: rgba(0, 123, 94, 0.9); /* green shade with opacity */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading centered and styled */
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Navbar links styling */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+body {
+  background-image: url('images/background.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.carousel {
+  position: relative;
+  width: 100vw; /* Full screen width */
+  height: 400px;
+  overflow: hidden;
+  margin: 0; /* No margin around */
+}
+
+.carousel-image {
+  width: 100vw; /* Full width of screen */
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.carousel-image.active {
+  display: block;
+  animation: fade 1s ease-in-out;
+}
+
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.content-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 900px;
+  margin: 40px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+footer {
+  background-color: rgba(0, 123, 94, 0.9); /* same color as header */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+}
+.content-box h3 {
+  margin-top: 20px;
+  color: #007B5E;
+}
+
+.content-box ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
